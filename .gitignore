@@ -1,0 +1,6 @@
+# Basic .gitignore
+.DS_Store
+node_modules/
+*.log
+*.tmp
+*.swp

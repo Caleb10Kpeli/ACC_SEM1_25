@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Mentor | E-commerce Product Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header container">
+        <div class="logo">
+            <img src="images/logo.svg" alt="Logo">
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="#">Collections</a></li>
+                <li><a href="#">Men</a></li>
+                <li><a href="#">Women</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="cart-avatar">
+            <div id="cart-icon">
+                <img src="images/icon-cart.svg" alt="Cart">
+                <span id="cart-count" class="cart-count hidden">0</span>
+            </div>
+            <img src="images/image-avatar.png" alt="Avatar" class="avatar">
+        </div>
+    </header>
+
+    <main class="container product">
+        <div class="product-gallery">
+            <img id="main-image" src="images/image-product-1.jpg" alt="Main Product Image" class="main-image">
+            <div class="thumbnails">
+                <img src="images/image-product-1-thumbnail.jpg" alt="Thumbnail 1" class="thumb active" data-big="images/image-product-1.jpg">
+                <img src="images/image-product-2-thumbnail.jpg" alt="Thumbnail 2" class="thumb" data-big="images/image-product-2.jpg">
+                <img src="images/image-product-3-thumbnail.jpg" alt="Thumbnail 3" class="thumb" data-big="images/image-product-3.jpg">
+                <img src="images/image-product-4-thumbnail.jpg" alt="Thumbnail 4" class="thumb" data-big="images/image-product-4.jpg">
+            </div>
+        </div>
+
+        <div class="product-details">
+            <h2 class="brand">Sneaker Company</h2>
+            <h1 class="product-title">Fall Limited Edition Sneakers</h1>
+            <p class="product-description">
+                These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they’ll withstand everything the weather can offer.
+            </p>
+            <div class="price">
+                <div class="current-price">$125.00 <span class="discount">50%</span></div>
+                <div class="old-price">$250.00</div>
+            </div>
+            <div class="quantity-add">
+                <div class="quantity">
+                    <button class="minus">-</button>
+                    <span class="number">0</span>
+                    <button class="plus">+</button>
+                </div>
+                <button class="add-to-cart" id="add-to-cart-btn">
+                    <img src="images/icon-cart.svg" alt="Cart Icon"> Add to Cart
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Cart Popup -->
+    <div id="cart-details" class="cart-details hidden">
+        <h3>Cart</h3>
+        <div class="cart-content" id="cart-content">
+            <p class="empty-cart">Your cart is empty.</p>
+        </div>
+    </div>
+
+    <!-- Lightbox -->
+<div id="lightbox" class="hidden fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center">
+    <div class="lightbox-container">
+        <button id="close-lightbox" class="close-lightbox">
+            <img src="images/icon-close.svg" alt="Close lightbox">
+        </button>
+        <div class="lightbox-main-image">
+            <img id="lightbox-main" src="images/image-product-1.jpg" alt="Lightbox Main">
+            <div class="lightbox-nav">
+                <button id="prev-button" class="nav-button prev">
+                    <img src="images/icon-previous.svg" alt="Previous">
+                </button>
+                <button id="next-button" class="nav-button next">
+                    <img src="images/icon-next.svg" alt="Next">
+                </button>
+            </div>
+        </div>
+        <div class="lightbox-thumbnails">
+            <img src="images/image-product-1-thumbnail.jpg" alt="Thumbnail 1" class="thumb active" data-big="images/image-product-1.jpg">
+            <img src="images/image-product-2-thumbnail.jpg" alt="Thumbnail 2" class="thumb" data-big="images/image-product-2.jpg">
+            <img src="images/image-product-3-thumbnail.jpg" alt="Thumbnail 3" class="thumb" data-big="images/image-product-3.jpg">
+            <img src="images/image-product-4-thumbnail.jpg" alt="Thumbnail 4" class="thumb" data-big="images/image-product-4.jpg">
+        </div>
+    </div>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
