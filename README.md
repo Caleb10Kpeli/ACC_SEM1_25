@@ -1,7 +1,5 @@
 # E-commerce Product Page - Frontend Mentor Challenge
 
-
-
 A responsive e-commerce product page with interactive features including:
 - Product image gallery with lightbox
 - Shopping cart functionality
