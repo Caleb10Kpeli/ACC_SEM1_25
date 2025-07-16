@@ -309,7 +309,6 @@ body {
     }
 }
 
-/* ✅ Then at the bottom of the file, paste this */
 @media (max-width: 768px) {
     .product {
         flex-direction: column;
